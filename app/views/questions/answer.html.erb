@@ -1,0 +1,9 @@
+<% if @answer == "I am going to work right now!" %>
+  <%= "Great!" %>
+<% elsif @answer.end_with?('?') %>
+  <%= "Silly question, get dressed and go to work!" %>
+<% else %>
+  <%= "I don't care, get dressed and go to work!" %>
+<% end %>
+
+<%= link_to "Ask more", ask_path %>
